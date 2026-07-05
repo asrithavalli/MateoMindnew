@@ -1,0 +1,50 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom animation utilities for neuron animation */
+.animate-fade-in { animation: fadeIn 1s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.animate-bounce-slow { animation: bounce 2s infinite alternate; }
+@keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-20px); } }
+/* Continuous bubble movement along paths */
+.animate-bubble-1 {
+  animation: bubbleMove1 4s linear infinite;
+}
+.animate-bubble-2 {
+  animation: bubbleMove2 5s linear infinite;
+}
+.animate-bubble-3 {
+  animation: bubbleMove3 6s linear infinite;
+}
+.animate-bubble-4 {
+  animation: bubbleMove4 7s linear infinite;
+}
+.animate-bubble-5 {
+  animation: bubbleMove5 5.5s linear infinite;
+}
+@keyframes bubbleMove1 {
+  0% { transform: translate(0,0) scale(1); opacity: 0.7; }
+  100% { transform: translate(400px,200px) scale(1.2); opacity: 1; }
+}
+@keyframes bubbleMove2 {
+  0% { transform: translate(0,0) scale(1); opacity: 0.7; }
+  100% { transform: translate(800px,400px) scale(1.1); opacity: 1; }
+}
+@keyframes bubbleMove3 {
+  0% { transform: translate(0,0) scale(1); opacity: 0.7; }
+  100% { transform: translate(1040px,700px) scale(1.3); opacity: 1; }
+}
+@keyframes bubbleMove4 {
+  0% { transform: translate(0,0) scale(1); opacity: 0.7; }
+  100% { transform: translate(900px,100px) scale(1.2); opacity: 1; }
+}
+@keyframes bubbleMove5 {
+  0% { transform: translate(0,0) scale(1); opacity: 0.7; }
+  100% { transform: translate(200px,800px) scale(1.1); opacity: 1; }
+}
+.animate-float, .animate-float2, .animate-float3, .animate-float4, .animate-float5, .animate-float6, .animate-float7 {
+  animation: floatMM 2s infinite alternate;
+}
+@keyframes floatMM { 0% { transform: translateY(0); } 100% { transform: translateY(-10px); } }
