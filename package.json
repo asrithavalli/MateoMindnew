@@ -1,11 +1,11 @@
 {
-<<<<<<< HEAD
   "name": "mateomind-fullstack",
   "version": "1.0.0",
   "description": "MateoMind Full-Stack Mental Health Application",
   "private": true,
   "scripts": {
-    "start": "npm run dev",
+    "build": "npm install && npm install --prefix backend && npm install --prefix my-mental-health-app && npm run build --prefix my-mental-health-app",
+    "start": "npm --prefix backend start",
     "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm --prefix backend run dev\" \"npm --prefix my-mental-health-app run dev\"",
     "dev:backend": "npm --prefix backend run dev",
     "dev:frontend": "npm --prefix my-mental-health-app run dev",
@@ -13,29 +13,5 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.2"
-=======
-  "name": "my-mental-health-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "firebase": "^10.7.1",
-    "localtunnel": "^2.0.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "yarn": "^1.22.22"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.32",
-    "tailwindcss": "^3.4.0",
-    "vite": "^7.1.2"
->>>>>>> 6afa54e4add974c816e3b043b9b552dcbde124b7
   }
 }
