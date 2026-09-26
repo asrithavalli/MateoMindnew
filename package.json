@@ -1,0 +1,16 @@
+{
+  "name": "mateomind-fullstack",
+  "version": "1.0.0",
+  "description": "MateoMind Full-Stack Mental Health Application",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan,magenta\" \"npm --prefix backend run dev\" \"npm --prefix my-mental-health-app run dev\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix my-mental-health-app run dev",
+    "install:all": "npm install --prefix backend && npm install --prefix my-mental-health-app"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
